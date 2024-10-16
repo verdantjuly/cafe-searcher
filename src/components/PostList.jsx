@@ -12,12 +12,6 @@ export default function PostList() {
         const createdAt = post.datetime.split("T")[0];
         return (
           <div className="post" key={post.url}>
-            <h1>{title}</h1>
-            <a href={post.url}>게시글 보기</a>
-            <p>
-              <strong>카페명 : </strong>
-              {post.cafename}
-            </p>
             {post.thumbnail && (
               <img
                 src={post.thumbnail}
@@ -28,10 +22,18 @@ export default function PostList() {
                 }
               />
             )}
+            <h1>{title}</h1>
+
+            <p>
+              <strong>카페명 : </strong>
+              {post.cafename}
+            </p>
+
             <p>
               <strong>작성일 : </strong>
               {createdAt}
             </p>
+            <a href={post.url}>게시글 보기</a>
           </div>
         );
       })}

@@ -1,11 +1,26 @@
 nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
   padding-bottom: 80px;
 }
 input {
-  width: 50%;
+  height: 40px;
   cursor: text;
+  width: 300px;
+  border: none;
+  background-color: aliceblue;
+  border-radius: 10px;
 }
 
 button {
+  height: 40px;
+  width: 80px;
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  border-radius: 10px;
   cursor: pointer;
 }

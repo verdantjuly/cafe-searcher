@@ -12,7 +12,7 @@ export default function Header() {
           setPostList(null);
         }}
       >
-        다음 카페 검색하기
+        <i>Daum</i> 카페 검색하기
       </h1>
     </header>
   );
