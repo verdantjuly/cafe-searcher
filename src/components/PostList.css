@@ -1,0 +1,33 @@
+.postList {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.postList h1 {
+  font-size: large;
+  font-weight: 900;
+}
+.post {
+  background-color: aliceblue;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+  .postList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .postList {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,11 @@
+nav {
+  padding-bottom: 80px;
+}
+input {
+  width: 50%;
+  cursor: text;
+}
+
+button {
+  cursor: pointer;
+}
